@@ -53,5 +53,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://localhost:5000/v1/api/"
+  "proxy": "https://firstdodoblog-1.herokuapp.com/v1/api/"
 }
