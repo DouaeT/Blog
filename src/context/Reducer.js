@@ -52,4 +52,6 @@ const Reducer = (state,action) =>{
         }
 }
 
+export default Reducer;
+
 module.exports = Reducer;
