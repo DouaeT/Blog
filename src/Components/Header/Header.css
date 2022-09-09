@@ -1,0 +1,161 @@
+nav.lg-screen {
+    background: white;
+    height: 4rem;
+    align-items: center;
+    padding: 0rem 2rem;
+    justify-content: space-between;
+}
+
+/* Nav Logo */
+
+.logo {
+    font-size: var(--lg-font);
+}
+
+/* Nav Menu */
+
+.nav-menu {
+    text-align: center;
+    align-content: center;
+    margin: 0 auto;
+}
+
+.nav-menu li {
+    padding: 0 1rem;
+    border-right: 1px solid var(--color-light-gray);
+}
+
+.nav-menu li:first-of-type {
+    border-left: 1px solid var(--color-light-gray);
+}
+
+/* Nav Input */
+
+.nav-input {
+    height: 2rem;
+    width: fit-content;
+    background-color: white;
+    border: 1px solid var(--color-light-gray);
+    margin-right: 20px;
+    align-items: center;
+    
+}
+
+.nav-input input {
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 0;
+    transition: 0.35s ease-in;
+}
+
+.nav-input.show input{
+    width: 200px;
+    padding-left: 7px;
+}
+
+.nav-search {
+    height: 1.8rem;
+    width: 1.8rem;
+    line-height: 1.8rem;
+    padding: 5px 0px;
+    color: var(--color-gray);
+    cursor: pointer;
+}
+
+/* Nav Icons */
+
+
+.nav-icons > * {
+    color: var(--color-gray);
+    font-size: 1.3rem;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.profile-img {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+}
+
+.nav-bars {
+    display: none;
+}
+
+/* Small screen menu */
+
+.nav-overlay {
+    position: fixed;
+    inset: 0;
+    height: 100vh;
+    width: 100vw;
+    background: #e27c0779;
+    z-index: 8545454545696;
+    justify-content: center
+    ;
+    align-items: center;
+    display: flex;
+    transform: translateY(-100%);
+    transition: 0.5s ease-in-out;
+}
+
+.sm-nav-menu {
+    gap: 1.5rem;
+    flex-direction: column;
+    text-align: center;
+}
+
+.sm-nav-menu li a{
+    color: var(--color-white);
+    font-size: var(--big-font);
+}
+
+.nav-close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 2.4rem;
+    cursor: pointer;
+    color: var(--color-light-orange);
+}
+
+.nav-overlay.show{
+    transform: translateY(0%);
+}
+
+
+@media screen and (max-width: 800px){
+
+    .logo {
+        font-size: var(--big-font);
+    }
+
+    .nav-overlay{
+        display: flex;
+    }
+
+    .sm-menu{
+        display: block;
+    }
+
+    nav .nav-menu {
+        display: none;
+    }
+
+    .nav-input.show input{
+        width: 150px;
+    }
+
+    .nav-icons > * {
+        font-size: 1.5rem;
+    }
+    
+    .nav-bars {
+        display: block;
+    }
+}

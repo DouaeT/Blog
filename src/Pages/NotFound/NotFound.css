@@ -1,0 +1,11 @@
+.not-found {
+    padding: 6rem 2rem;
+    justify-content : center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.not-found h1 {
+    font-size: var(--big-font);
+    margin-bottom: 2rem;
+}

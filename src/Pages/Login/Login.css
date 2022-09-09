@@ -1,0 +1,78 @@
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 4rem);
+}
+
+.login-form,
+.register-form {
+    flex-direction: column;
+    background: white;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 2px var(--color-light-gray);
+    padding: 1rem 1.5rem 3rem 1.5rem;
+}
+
+.login-page label,
+.register-page label {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: 20px auto;
+    color: var(--color-dark-orange);
+    position: relative;
+}
+
+.login-page label span ,
+.register-page label span{
+    position: absolute;
+    font-size: var(--small-font-3);
+    top: -5px;
+    left: 10px;
+    transform: translateY(30px);
+    transition: 0.2s ease-in;
+}
+
+.login-page label input:focus + *,
+.login-page label input:active + *,
+.login-page label input:hover + *,
+.register-page label input:focus + *,
+.register-page label input:active + *,
+.register-page label input:hover + *,
+.register-page label.active input + *,
+.login-page label.active input + * {
+    transform: translateY(0);
+}
+
+
+
+.login-page label input,
+.register-page label input {
+    width: 100%;
+    display: block;
+    padding: 10px 0rem 10px 10px;
+    border: 1px solid var(--color-light-gray);
+    outline: none;
+    margin-top: 15px;
+}
+
+
+.login-page span a ,
+.register-page span a{
+    color: var(--color-light-orange);
+    margin-left: 10px;
+}
+
+.error-style {
+    display: block;
+}
+
+@media screen and (max-width: 600px){
+.login-page label,
+.register-page label {
+    width: 300px;
+}
+}

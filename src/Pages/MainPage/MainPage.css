@@ -1,0 +1,26 @@
+.main-page-grid {
+    grid-template-columns: calc(100vw - 400px) 350px;
+    gap: 3rem;
+    padding-top: 3rem;
+    width: 100%;
+}
+
+.main-page-content {
+    padding: 0 3rem;
+    width: 100%;
+}
+
+.main-page-sidebar{
+    padding: 0 2rem;
+}
+
+.main-page-content,
+.main-page-sidebar {
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 800px){
+    .main-page-grid {
+        grid-template-columns: 1fr;
+    }
+}

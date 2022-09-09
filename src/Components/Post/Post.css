@@ -1,0 +1,136 @@
+.post {
+    background-color: white;
+    border-radius: 5px;
+    padding: 40px 1.5rem;
+    margin: 10px auto;
+    width: calc(100vw - 550px);
+}
+
+.post-header {
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.post-writer {
+    align-items: center;
+    gap: 10px;
+}
+
+.post-writer img {
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.post-title {
+    margin: 25px auto;
+    font-size: var(--big-font);
+}
+
+
+.post-image-overlay {
+    width: 90%;
+    height: 500px;
+    margin: 20px auto;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.post-image-overlay:hover img {
+    transform: scale(1.05);
+    object-fit: cover;
+}
+
+.post-image-overlay img {
+    width: 100%;
+    height: 100%;
+    transition: 0.3s ease-in;
+    object-fit: cover;
+}
+
+.post-description {
+    line-height: 25px;
+    font-size: var(--small-font-2);
+    white-space: wrap;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.post .category-btn {
+    background-color: transparent;
+}
+
+.post_postPage{
+    width: 80%;
+}
+
+.post_postPage .post-description {
+    text-align: center;
+    line-height: 25px;
+}
+
+/* Edit and Delete Section */
+
+.edit-icons {
+    text-align: right;
+    justify-content: flex-end;
+    width: 90%;
+    margin: 20px auto;
+}
+
+#editIcon,
+#deleteIcon {
+    font-size: 22px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#editIcon {
+    color: rgb(38, 173, 20);
+}
+
+#deleteIcon {
+    color: #ad1c1c;
+}
+
+.post-titleInput {
+    margin: 20px auto;
+    font-size: var(--lg-font);
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.post-descriptionInput {
+    display: block;
+    border: none;
+    outline: none;
+    font-size: var(--big-font);
+    width: 100%;
+}
+
+
+
+/* Media Query */
+
+@media screen and (max-width: 1200px){
+    .post-image-overlay {
+        width: 95%;
+        height: 300px;
+    }
+
+    .post{
+        width: 75vw;
+    }
+
+}
+
+@media screen and (max-width: 600px){
+    .post-image-overlay {
+        width: 95%;
+        height: 200px;
+    }
+
+}

@@ -1,0 +1,30 @@
+
+.sidebar {
+    display: grid;
+    gap: 2rem;
+}
+
+.about-sidebar-p {
+    font-size: var(--small-font-3);
+    line-height: 22px;
+    margin: 20px 0;
+}
+
+.main-page hr {
+    height: 1px;
+    opacity: 0.3;
+    width: 80%;
+    margin: 20px auto !important;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+}
+
+.social-media a > *{
+    color: var(--color-gray);
+    font-size: var(--small-font-1);
+    text-align: center;
+    margin: 10px ;
+}

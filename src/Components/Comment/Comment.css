@@ -1,0 +1,54 @@
+
+.comment {
+    background: white;
+    width: 90%;
+    max-width: 500px;
+    padding: 0.5rem 2rem 1.5rem 0.7rem;
+    border-radius: 10px;
+}
+
+.comment .flex {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.comment img {
+    width: 30px;
+    border: 1px solid gray;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 10px 0;
+}
+
+.comment h2 {
+    border-bottom: 1px solid var(--color-light-gray);
+    padding-bottom: 10px;
+}
+
+.comment p {
+    padding: 20px 0;
+}
+
+.comment .edit-comment {
+    gap: 0.5rem;
+}
+
+.comment .edit-comment > * {
+    font-size: var(--small-font-2);
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.comment .edit-comment > *:active,
+.comment .edit-comment > *:focus {
+    opacity: 1;
+}
+
+.editedTextearea{
+    width: 100%;
+    outline: none;
+    padding: 20px 0;
+    border: none;
+    font-size: var(--small-font-2);
+}
